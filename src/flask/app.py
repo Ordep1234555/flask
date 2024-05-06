@@ -1222,7 +1222,7 @@ class Flask(App):
             if isinstance(status, (str, bytes, bytearray)):
                 rv.status = status
             else:
-                rv.status_code = status
+                rv.status_code = None
 
         # extend existing headers with provided headers
         if headers:
